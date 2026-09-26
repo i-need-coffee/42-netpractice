@@ -53,3 +53,30 @@ Usable IP range:
 Here is an example of a LAN:  
 
 ![lan example](./img/LAN.png)
+
+# Subnet
+
+A subnet, or subnetwork, is a logical subdivision of an IP network.
+
+The practice of dividing a network into two or more networks is called subnetting.
+
+It is represented by a CIDR notation (subnet mask), like so:  
+192.168.1.0 **/24**
+
+## Subnet Mask
+
+A subnet mask is a 32-bit number used in IPv4 networking that helps divide an IP address into two components: the network portion and the host portion.
+
+It determines which part of the IP address identifies the network and which part identifies the device (host) on that network. This concept is key to organizing and securing IP networks.
+
+In decimal:
+| 255. 255. 255.   | 0.           |
+|:----------------:|:------------:|
+| Network Portion  | Host Portion |
+
+Or in binary:
+| 11111111. 11111111. 11111111.   | 00000000.           |
+|:-------------------------------:|:-------------------:|
+| Network Portion                 | Host Portion        |
+
+It is useful to be able to convert to bits and vice-versa in network configuration.
